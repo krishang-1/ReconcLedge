@@ -10,7 +10,7 @@ list for anything it genuinely can't resolve — rather than guessing.
 LLM providers, then again against live Groq traffic through the complete,
 fully-built system (not just the pipeline). Full detail below.
 
-📹 **Demo video:** _[add link here]_ &nbsp;·&nbsp; 🚀 **Quick start:** see [Setup](#setup) below
+🚀 **Quick start:** see [Setup](#setup) below
 
 ---
 
