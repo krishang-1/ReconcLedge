@@ -16,29 +16,21 @@ fully-built system (not just the pipeline). Full detail below.
 
 ## Status
 
-Data layer, deterministic matcher, LLM agent stage, verifier, and eval
-harness are built and **confirmed independently on two different
-providers/models**: **95% match rate, 0% false positive rate** on the
-full, corrected 20-record held-out eval split (drawn from a 52-record
-synthetic batch total) — matched exactly on both
-`moonshotai/kimi-k2-0905` (OpenRouter) and `openai/gpt-oss-120b` (Groq),
-**re-confirmed a third time against live Groq traffic after all
-production-hardening work below**, and **confirmed a fourth time on
-2026-08-29 through the complete, fully-built system** — real frontend,
-real live SSE streaming, real cost/latency reporting, against real Groq
-traffic on Krishang's own machine — landing on the identical 95%/0%,
-with 8 exceptions correctly including all 3 genuinely-ambiguous
-duplicate-settlement cases, none force-matched. This is the first time
-the entire system (not just the backend pipeline) has been exercised
-against a live model rather than the deterministic `FakeLLMClient` used
-throughout this project's own development and CI-style verification.
-`FEE_DRIFT` — the one category requiring genuine LLM judgment rather than
-arithmetic — scored 4/4. The single non-perfect result (`DUPLICATE`) is
-expected, documented behavior, not a bug: two settlements of the identical
-amount with no distinguishing reference are correctly flagged for human
-review rather than guessed at — a confident guess here would trade a
-transparent, correct exception for a coin-flip chance of a silent wrong
-match, which is the wrong trade for a finance system to make.
+ReconcLedge is a financial reconciliation system designed to automatically identify and resolve discrepancies between transaction records and settlement data.
+
+The system combines a deterministic matching engine, structured data processing, intelligent exception handling, verification, and a dedicated evaluation framework. The core reconciliation logic is deliberately deterministic wherever the outcome can be established with certainty, while more complex cases are escalated to an intelligent decision stage rather than relying on hard-coded assumptions.
+
+The system has been independently validated across two different model providers and models, achieving a 95% match rate with 0% false positives on a full 20-record held-out evaluation set drawn from a 52-record synthetic dataset. The result was reproduced across OpenRouter's moonshotai/kimi-k2-0905 and Groq's openai/gpt-oss-120b, and subsequently reconfirmed against live Groq traffic after production hardening.
+
+Most importantly, the result was reproduced again on August 29, 2026, using the complete production-style system on my own machine — including the real frontend, live SSE streaming, cost and latency reporting, and live model traffic.
+
+The system correctly identified 8 exceptions, including all three genuinely ambiguous duplicate-settlement cases. Rather than forcing a match when two settlements had identical amounts and no distinguishing reference, ReconcLedge correctly flagged them for human review. In a financial system, avoiding an incorrect match is more valuable than making an unsupported guess.
+
+The most challenging reconciliation category, FEE_DRIFT, which requires reasoning beyond straightforward arithmetic matching, achieved 4/4 accuracy.
+
+The key achievement is therefore not simply the use of an AI model. It is the design of a reliable reconciliation workflow where deterministic rules handle what can be proven, intelligent reasoning is reserved for what cannot, and every decision is independently verified and measurable.
+
+ReconcLedge demonstrates how intelligent automation can be introduced into a finance workflow without sacrificing transparency, correctness, or human oversight.
 
 **Production hardening (beyond the original submission scope) is done —
 all 6 planned items shipped and verified.** See `docs/ROADMAP.md` for the
