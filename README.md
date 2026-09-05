@@ -22,7 +22,7 @@ The system combines a deterministic matching engine, structured data processing,
 
 The system has been independently validated across two different model providers and models, achieving a 95% match rate with 0% false positives on a full 20-record held-out evaluation set drawn from a 52-record synthetic dataset. The result was reproduced across OpenRouter's moonshotai/kimi-k2-0905 and Groq's openai/gpt-oss-120b, and subsequently reconfirmed against live Groq traffic after production hardening.
 
-Most importantly, the result was reproduced again on August 29, 2026, using the complete production-style system on my own machine — including the real frontend, live SSE streaming, cost and latency reporting, and live model traffic.
+Most importantly, the result was reproduced again on September 5th, 2026, using the complete production-style system on my own machine including the real frontend, live SSE streaming, cost and latency reporting, and live model traffic.
 
 The system correctly identified 8 exceptions, including all three genuinely ambiguous duplicate-settlement cases. Rather than forcing a match when two settlements had identical amounts and no distinguishing reference, ReconcLedge correctly flagged them for human review. In a financial system, avoiding an incorrect match is more valuable than making an unsupported guess.
 
