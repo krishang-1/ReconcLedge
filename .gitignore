@@ -1,0 +1,40 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Real API keys / secrets - never committed. Nothing currently creates
+# a .env file in this project, but this rule exists so accidentally
+# creating one locally can't turn into an accidental commit.
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend build artifacts and dependencies - see frontend/.gitignore
+# for the frontend-scoped version of this same exclusion list.
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Runtime artifact - the job store database, created fresh on first API
+# use. Never committed; each deployment gets its own.
+api/jobs.db
+
+# Runtime artifact - agent/merchant_config.py's own SQLite file, same
+# reasoning as api/jobs.db above (see docs/DECISIONS.md for why this
+# module moved off an in-memory dict).
+agent/merchant_config.db
+
+# Scratch outputs from the deep-fuzz scripts
+scripts/fuzz_results.json
+scripts/realworld_simulation_results.json
+scripts/_deep_fuzz_hardening_jobs.db
+scripts/_deep_fuzz_reconciliation_jobs.db
+scripts/_deployment_browser_test_jobs.db

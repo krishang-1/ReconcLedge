@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Real, on-brand favicon replacing the leftover generic Vite scaffold
+       asset (found during a genuine design audit - see docs/DECISIONS.md).
+       Deliberately simple: a favicon renders as small as 16px, so a
+       recognizable mark beats a detailed illustration. Directly visualizes
+       the actual product concept - reconciliation resolving to a verified
+       match - using the real design system colors, not arbitrary ones. -->
+  <rect width="32" height="32" rx="7" fill="#14151a"/>
+  <rect x="5" y="5" width="22" height="22" rx="3" fill="#f6f1e4"/>
+  <path d="M10.5 16.5L14 20L22 11.5" stroke="#3f7d5c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

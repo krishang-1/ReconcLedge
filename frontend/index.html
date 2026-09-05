@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReconcLedge</title>
+    <meta name="description" content="Live AI-agent reconciliation dashboard - matches, exceptions, and every decision explained." />
+    <!-- Real, on-brand favicon replacing a leftover generic scaffold
+         asset (found during a genuine design audit - see
+         docs/DECISIONS.md) - there was previously no <link rel="icon">
+         at all, meaning every browser tab showed a blank/default icon
+         this whole time. -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- IBM Plex Mono as the display face (a deliberate choice - the
+         subject is literally numeric/alphanumeric precision: amounts,
+         UTRs, transaction IDs) paired with IBM Plex Sans for body copy.
+         Same type family throughout for a cohesive "financial ledger
+         system" feel, not two unrelated faces. See docs/STAGE_6_FRONTEND_PLAN.md. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

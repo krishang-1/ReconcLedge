@@ -1,0 +1,344 @@
+[
+  {
+    "utr_number": "UTR458487734515",
+    "settled_amount": 32298.2,
+    "settlement_date": "2026-08-12",
+    "narration": "NEFT CR d2595c78 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR263545473722",
+    "settled_amount": 11973.79,
+    "settlement_date": "2026-08-21",
+    "narration": "NEFT CR 0d23c5eb RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR383719759048",
+    "settled_amount": 2120.49,
+    "settlement_date": "2026-08-02",
+    "narration": "NEFT CR de701ee9 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR989644996734",
+    "settled_amount": 12217.58,
+    "settlement_date": "2026-08-05",
+    "narration": "NEFT CR b633d084 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR137521669540",
+    "settled_amount": 19875.18,
+    "settlement_date": "2026-08-13",
+    "narration": "NEFT CR 07943bb7 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR566861043205",
+    "settled_amount": 35237.59,
+    "settlement_date": "2026-08-06",
+    "narration": "NEFT CR 18e5bdd3 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR695776049775",
+    "settled_amount": 22228.58,
+    "settlement_date": "2026-08-16",
+    "narration": "NEFT CR 02577985 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR561890254567",
+    "settled_amount": 31732.61,
+    "settlement_date": "2026-08-04",
+    "narration": "NEFT CR 4b2004fa RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR131243408379",
+    "settled_amount": 34234.7,
+    "settlement_date": "2026-08-04",
+    "narration": "NEFT CR de6e72d7 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR225078951691",
+    "settled_amount": 26241.34,
+    "settlement_date": "2026-08-13",
+    "narration": "NEFT CR bfc81ad8 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR880739888271",
+    "settled_amount": 4188.36,
+    "settlement_date": "2026-08-02",
+    "narration": "NEFT CR d9224ecd RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR374403446249",
+    "settled_amount": 26256.02,
+    "settlement_date": "2026-08-19",
+    "narration": "NEFT CR 9843f03f RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR884072663850",
+    "settled_amount": 40023.78,
+    "settlement_date": "2026-08-02",
+    "narration": "NEFT CR a0c052e5 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR434094903423",
+    "settled_amount": 18446.29,
+    "settlement_date": "2026-08-06",
+    "narration": "NEFT CR 7a 8e 28 4c RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR044903498065",
+    "settled_amount": 755.97,
+    "settlement_date": "2026-08-13",
+    "narration": "NEFT CR 1de462f4 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR555135125058",
+    "settled_amount": 647.24,
+    "settlement_date": "2026-08-19",
+    "narration": "NEFT CR 322B-9687 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR495870685306",
+    "settled_amount": 2072.26,
+    "settlement_date": "2026-08-05",
+    "narration": "NEFT CR 0e8f84c3 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR239133626704",
+    "settled_amount": 6078.06,
+    "settlement_date": "2026-08-12",
+    "narration": "NEFT CR 23a0bdf6 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR125292227339",
+    "settled_amount": 25699.84,
+    "settlement_date": "2026-08-05",
+    "narration": "NEFT CR cedb0235 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR338487732308",
+    "settled_amount": 17155.93,
+    "settlement_date": "2026-08-05",
+    "narration": "NEFT CR a33e4e33 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR560763609637",
+    "settled_amount": 3053.78,
+    "settlement_date": "2026-08-20",
+    "narration": "NEFT CR 1998a8f7 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR529309867128",
+    "settled_amount": 23502.27,
+    "settlement_date": "2026-08-08",
+    "narration": "NEFT CR 24ad81dd RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR447690438214",
+    "settled_amount": 38351.65,
+    "settlement_date": "2026-08-17",
+    "narration": "NEFT CR 331a3ed1 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR290868910115",
+    "settled_amount": 11415.2,
+    "settlement_date": "2026-08-11",
+    "narration": "NEFT CR dfac6d3b RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR063353289610",
+    "settled_amount": 20338.65,
+    "settlement_date": "2026-08-10",
+    "narration": "NEFT CR 398f7cdf RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR353881968747",
+    "settled_amount": 41731.43,
+    "settlement_date": "2026-08-01",
+    "narration": "NEFT CR f104af6b RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR911152672624",
+    "settled_amount": 26181.37,
+    "settlement_date": "2026-08-19",
+    "narration": "NEFT CR 7ff134ee RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR981332608308",
+    "settled_amount": 30970.92,
+    "settlement_date": "2026-08-21",
+    "narration": "NEFT CR 6a793a7a RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR557200265582",
+    "settled_amount": 22622.38,
+    "settlement_date": "2026-08-05",
+    "narration": "NEFT CR 1E06-CCFA RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR788084056440",
+    "settled_amount": 39095.66,
+    "settlement_date": "2026-08-02",
+    "narration": "NEFT CR 74f6df76 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR137483789595",
+    "settled_amount": 12217.58,
+    "settlement_date": "2026-08-05",
+    "narration": "NEFT CR b633d084 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR313404440226",
+    "settled_amount": 14539.16,
+    "settlement_date": "2026-08-19",
+    "narration": "NEFT CR 42278605 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR096463876194",
+    "settled_amount": 37493.03,
+    "settlement_date": "2026-08-06",
+    "narration": "NEFT CR ac8132c0 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR080337302615",
+    "settled_amount": 33345.81,
+    "settlement_date": "2026-08-05",
+    "narration": "NEFT CR 91d78a9b RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR529393077746",
+    "settled_amount": 15298.32,
+    "settlement_date": "2026-08-13",
+    "narration": "NEFT CR 5183634d RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR846722076278",
+    "settled_amount": 12749.19,
+    "settlement_date": "2026-08-09",
+    "narration": "NEFT CR d4841 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR379370294394",
+    "settled_amount": 2120.5,
+    "settlement_date": "2026-08-02",
+    "narration": "NEFT CR de701ee9 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR495058008495",
+    "settled_amount": 8181.68,
+    "settlement_date": "2026-08-14",
+    "narration": "NEFT CR de206ec4 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR511393683388",
+    "settled_amount": 14539.15,
+    "settlement_date": "2026-08-19",
+    "narration": "NEFT CR 42278605 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR208132388660",
+    "settled_amount": 19990.92,
+    "settlement_date": "2026-08-03",
+    "narration": "NEFT CR 99253be9 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR116697037967",
+    "settled_amount": 13699.55,
+    "settlement_date": "2026-08-12",
+    "narration": "NEFT CR a804f5c3 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR075747515907",
+    "settled_amount": 15853.34,
+    "settlement_date": "2026-08-21",
+    "narration": "NEFT CR c33d52e0 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR832950016740",
+    "settled_amount": 27984.06,
+    "settlement_date": "2026-08-15",
+    "narration": "NEFT CR adc30543 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR577630633873",
+    "settled_amount": 37745.58,
+    "settlement_date": "2026-08-02",
+    "narration": "NEFT CR f8f1f2f4 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR968456262209",
+    "settled_amount": 38227.66,
+    "settlement_date": "2026-08-11",
+    "narration": "NEFT CR 2f51d1e0 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR674857331688",
+    "settled_amount": 29350.73,
+    "settlement_date": "2026-08-10",
+    "narration": "NEFT CR 957a8cfb RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR541607243377",
+    "settled_amount": 14582.17,
+    "settlement_date": "2026-08-18",
+    "narration": "NEFT CR d5c9cdfd RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR187870680914",
+    "settled_amount": 4336.3,
+    "settlement_date": "2026-08-19",
+    "narration": "NEFT CR f6fee4de RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR822594153554",
+    "settled_amount": 24197.63,
+    "settlement_date": "2026-08-09",
+    "narration": "NEFT CR 1d7b84df RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR823345926868",
+    "settled_amount": 11415.2,
+    "settlement_date": "2026-08-11",
+    "narration": "NEFT CR dfac6d3b RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR709445965738",
+    "settled_amount": 3053.78,
+    "settlement_date": "2026-08-20",
+    "narration": "NEFT CR 1998a8f7 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR632844614431",
+    "settled_amount": 22834.95,
+    "settlement_date": "2026-08-07",
+    "narration": "NEFT CR a9929e5e RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR296400473109",
+    "settled_amount": 13355.32,
+    "settlement_date": "2026-08-17",
+    "narration": "NEFT CR b69486c1 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR901591772669",
+    "settled_amount": 31562.02,
+    "settlement_date": "2026-08-20",
+    "narration": "NEFT CR 20da723a RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR378200593676",
+    "settled_amount": 37664.07,
+    "settlement_date": "2026-08-01",
+    "narration": "NEFT CR 05a62729 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR268310679883",
+    "settled_amount": 5021.83,
+    "settlement_date": "2026-08-21",
+    "narration": "NEFT CR 674dc264 RAZORPAY SETTLEMENT"
+  },
+  {
+    "utr_number": "UTR705572125259",
+    "settled_amount": 17155.93,
+    "settlement_date": "2026-08-05",
+    "narration": "NEFT CR a33e4e33 RAZORPAY SETTLEMENT"
+  }
+]

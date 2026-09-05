@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+/*
+  Design system: a ledger book open on a dark desk.
+
+  ink       - the desk. Near-black, slightly blue, not pure black.
+  paper     - the open ledger page. Warm ivory, used for content
+              cards/surfaces, never as the full-page background -
+              that distinction (dark desk, warm paper islands) is
+              the whole visual idea.
+  rule      - column/divider lines on the dark desk surface, evoking
+              ledger ruling.
+  verified  - a deep forest green, like rubber-stamp ink, for
+              resolved/matched states. Not a bright system-green.
+  flagged   - a warm brass/amber, like a highlighter or an ink stamp,
+              for records genuinely deferred to a human. Never red -
+              a flagged record isn't an error, it's an honest
+              decision not to guess.
+  accent    - a muted indigo-violet. Originally reserved for exactly
+              one signature live moment (see .stamp-settle below) -
+              deliberately widened during the Phase 7 polish pass
+              (see docs/DECISIONS.md) into a small, consistent set of
+              real orientation/interaction cues: the active-nav
+              underline, small heading markers, and button hover
+              states. Still never used for large fills or competing
+              with the verified/flagged vocabulary that carries the
+              actual reconciliation-outcome meaning - just no longer
+              claimed to be single-use, since that stopped being true
+              and a stale claim in this comment is worse than an
+              updated one.
+
+  See docs/STAGE_6_FRONTEND_PLAN.md for the full rationale.
+
+  Typography: three faces, each reserved for a distinct kind of
+  content, not interchangeable. display/mono (IBM Plex Mono) - data
+  that needs precise character alignment: transaction IDs, table
+  values, stat numbers, badges. heading (IBM Plex Serif) - prose-like
+  headings and the brand name only, added during a later UI rework
+  (see docs/DECISIONS.md) specifically to read as a formal ledger/
+  financial-statement, not just a technical tool - deliberately NOT
+  applied to numeric figures, which stay in mono for the same
+  precision reasons as table data. body (IBM Plex Sans) - everything
+  else. All three are genuinely one type family (IBM designed Plex
+  Mono/Serif/Sans to pair together), not an arbitrary mix.
+*/
+@theme {
+  --color-ink: #14151a;
+  --color-ink-raised: #1b1c23;
+  --color-rule: #2a2d3a;
+  --color-paper: #f6f1e4;
+  --color-paper-dim: #ece5d2;
+  --color-verified: #3f7d5c;
+  --color-verified-soft: #d9e8de;
+  --color-flagged: #b8863b;
+  --color-flagged-soft: #f0e3c9;
+  --color-accent: #6e5bc4;
+  --color-ink-text: #14151a;
+  --color-paper-text: #efe9da;
+
+  --font-display: "IBM Plex Mono", ui-monospace, monospace;
+  --font-heading: "IBM Plex Serif", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* A modest, global font-size bump - Krishang asked for text that's
+   "slightly larger and slightly more visible" across the whole app.
+   A single root-level change rather than touching Tailwind size
+   utilities file-by-file: every rem-based Tailwind text-* utility
+   scales proportionally from this, so text-sm/text-xs/etc. everywhere
+   grow together, keeping the existing type scale's proportions intact
+   rather than making some things bigger and others not. The handful
+   of literal text-[10px] micro-labels used for uppercase table/stat
+   headers are fixed px, not rem, so they don't scale from this alone -
+   bumped those individually to text-[11px] for the same reason. */
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-ink);
+  /* A real, considered background treatment, not flat empty color -
+     found missing during a genuine design audit (real screenshots
+     across every page, not assumed): every page had content confined
+     to the top-left with a huge void below and to the right, the
+     single most common "unfinished/assembled" tell in a dark-mode
+     layout. Two very subtle layers, neither loud enough to compete
+     with content: a fine, sparse dot-grid (24px spacing, near-
+     invisible) evoking graph-paper precision - a considered nod to
+     the project's own subject (numeric precision, ledger accuracy),
+     not decoration for its own sake - and a soft radial vignette
+     giving the dark "desk" real depth instead of reading as a flat
+     color fill. This is what makes generous negative space read as
+     "spacious, intentional" rather than "empty, incomplete." */
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(239, 233, 218, 0.05) 1px, transparent 0),
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(110, 91, 196, 0.08), transparent 60%);
+  background-size: 24px 24px, 100% 100%;
+  background-attachment: fixed;
+  color: var(--color-paper-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Respect reduced-motion preferences - the stamp-settle signature
+   animation (used exactly once per resolved record, nowhere else)
+   degrades to an instant state change rather than being forced. */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* The signature moment: a record settling into a resolved state, as
+   if a stamp just came down and is still slightly rocking to rest.
+   Used ONLY on the badge that appears when a matched/exception record
+   resolves in the live-run view - nowhere else in the app. */
+@keyframes stamp-settle {
+  0% {
+    opacity: 0;
+    transform: scale(1.4) rotate(-6deg);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(0.92) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.stamp-settle {
+  animation: stamp-settle 360ms cubic-bezier(0.2, 0.8, 0.3, 1) both;
+}
+
+/* Refined card treatment, replacing the repeated
+   "bg-paper text-ink-text rounded-lg shadow-2xl shadow-black/40"
+   utility string duplicated across 13 files - a single source of
+   truth now, not 13 copies that could quietly drift out of sync.
+   Adds two things a genuine design audit found missing: a soft
+   hairline edge (a warm, paper-toned line, not the dark desk's own
+   "rule" color - it's the edge of the PAPER, giving cards a sense of
+   being a real cut sheet rather than a borderless box floating on
+   shadow alone) and a layered shadow (a tight, defined shadow close
+   to the card plus a larger, softer one further out) - the standard
+   technique for a considered sense of physical elevation, rather than
+   a single flat drop-shadow. */
+.ledger-card {
+  background-color: var(--color-paper);
+  color: var(--color-ink-text);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(20, 21, 26, 0.08);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.3),
+    0 20px 40px -12px rgba(0, 0, 0, 0.45);
+}
+
+/* Refined page-heading treatment, replacing the repeated
+   "font-display text-2xl font-semibold text-paper-text" utility
+   string duplicated across every page (same reasoning as
+   .ledger-card above - one source of truth, not six copies that
+   could drift). A genuine design audit found headings across the app
+   fairly flat/uniform with little typographic confidence - this adds
+   a small accent marker (evoking a ledger entry mark, not decoration
+   for its own sake) and slightly tighter tracking for a more
+   deliberate, considered feel at the size that matters most: the
+   first thing read on every page. */
+.page-heading {
+  font-family: var(--font-heading);
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--color-paper-text);
+  letter-spacing: -0.005em;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.page-heading::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* Refined primary button, replacing the repeated
+   "bg-accent text-paper-text px-4 py-2(.5) rounded-md font-mono
+   text-sm font-medium hover:opacity-90 transition-opacity
+   disabled:opacity-40" string duplicated (with small, accidental
+   inconsistencies - one file used py-2.5, everywhere else used py-2)
+   across 6 files. A real design audit found buttons genuinely flat -
+   a solid rectangle with only an opacity dip on hover. Adds a soft
+   accent-colored glow and a subtle lift on hover/active - the
+   standard small vocabulary for a button that feels considered
+   rather than a bare HTML default with a background color, while
+   staying fully consistent with the existing accent-color-spent-
+   sparingly design principle (see index.css's own top-of-file
+   rationale) - the glow is only ever visible on direct interaction,
+   not resting state. Layout-only utilities (shrink-0, w-full, mt-4,
+   etc.) stay on each call site as plain Tailwind classes alongside
+   this one; only the shared visual treatment moved here. */
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-paper-text);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: transform 150ms ease, box-shadow 150ms ease, opacity 150ms ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px -2px rgba(110, 91, 196, 0.5);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

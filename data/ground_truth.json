@@ -1,0 +1,442 @@
+[
+  {
+    "transaction_id": "txn_054af1969fb0e9",
+    "correct_settlement_utrs": [
+      "UTR063353289610"
+    ],
+    "mismatch_type": "FEE_DRIFT",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_dfa72c2b7e8a00",
+    "correct_settlement_utrs": [
+      "UTR290868910115"
+    ],
+    "mismatch_type": "DUPLICATE",
+    "note": "duplicate settlement row also exists: UTR823345926868",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_19cb12bab51045",
+    "correct_settlement_utrs": [
+      "UTR313404440226",
+      "UTR511393683388"
+    ],
+    "mismatch_type": "SPLIT",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_7d1cd1a801c367",
+    "correct_settlement_utrs": [
+      "UTR495058008495"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_eb1c6ce03109b0",
+    "correct_settlement_utrs": [
+      "UTR989644996734"
+    ],
+    "mismatch_type": "DUPLICATE",
+    "note": "duplicate settlement row also exists: UTR137483789595",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_631d7aa90c3291",
+    "correct_settlement_utrs": [
+      "UTR075747515907"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_c605cdf6b89336",
+    "correct_settlement_utrs": [
+      "UTR378200593676"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_cdc9892f49f8ed",
+    "correct_settlement_utrs": null,
+    "mismatch_type": "ORPHAN_GATEWAY",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_df258574314693",
+    "correct_settlement_utrs": [
+      "UTR458487734515"
+    ],
+    "mismatch_type": "TIMING_LAG",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_de0dc2bd4049e5",
+    "correct_settlement_utrs": [
+      "UTR434094903423"
+    ],
+    "mismatch_type": "GARBLED_REF",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_4c7d5ff7468fdc",
+    "correct_settlement_utrs": [
+      "UTR529309867128"
+    ],
+    "mismatch_type": "FEE_DRIFT",
+    "split": "dev"
+  },
+  {
+    "transaction_id": null,
+    "orphan_bank_utr": "UTR187870680914",
+    "correct_settlement_utrs": null,
+    "mismatch_type": "ORPHAN_BANK",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_9a53152699678e",
+    "correct_settlement_utrs": null,
+    "mismatch_type": "ORPHAN_GATEWAY",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_707cb6db9051fe",
+    "correct_settlement_utrs": [
+      "UTR557200265582"
+    ],
+    "mismatch_type": "GARBLED_REF",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_7df499bf33a221",
+    "correct_settlement_utrs": [
+      "UTR137521669540"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_3022a93bc29b1d",
+    "correct_settlement_utrs": [
+      "UTR353881968747"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_b321b8901398bb",
+    "correct_settlement_utrs": [
+      "UTR268310679883"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_e7b1f932881fe7",
+    "correct_settlement_utrs": [
+      "UTR822594153554"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_748fa1ecc5420b",
+    "correct_settlement_utrs": [
+      "UTR225078951691"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_8d2c7bac1c7403",
+    "correct_settlement_utrs": [
+      "UTR495870685306"
+    ],
+    "mismatch_type": "FEE_DRIFT",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_13b8b357ab2f74",
+    "correct_settlement_utrs": null,
+    "mismatch_type": "ORPHAN_GATEWAY",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_638b34fa781359",
+    "correct_settlement_utrs": [
+      "UTR447690438214"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_79e032f96c313a",
+    "correct_settlement_utrs": [
+      "UTR080337302615"
+    ],
+    "mismatch_type": "FEE_DRIFT",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_ab01468eb41e49",
+    "correct_settlement_utrs": [
+      "UTR555135125058"
+    ],
+    "mismatch_type": "GARBLED_REF",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_4827bc811cd5d0",
+    "correct_settlement_utrs": null,
+    "mismatch_type": "ORPHAN_GATEWAY",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_9de1d398645528",
+    "correct_settlement_utrs": [
+      "UTR566861043205"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_2a9d2a0f1052b6",
+    "correct_settlement_utrs": [
+      "UTR125292227339"
+    ],
+    "mismatch_type": "TIMING_LAG",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_6800276c9d1803",
+    "correct_settlement_utrs": [
+      "UTR383719759048",
+      "UTR379370294394"
+    ],
+    "mismatch_type": "SPLIT",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_3cb78e127885c7",
+    "correct_settlement_utrs": [
+      "UTR131243408379"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_277be96ac0a68b",
+    "correct_settlement_utrs": [
+      "UTR901591772669"
+    ],
+    "mismatch_type": "FEE_DRIFT",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_15acdbf9593a31",
+    "correct_settlement_utrs": [
+      "UTR541607243377"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_c876b4dd1e3796",
+    "correct_settlement_utrs": [
+      "UTR263545473722"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_7e71ad5518edbe",
+    "correct_settlement_utrs": [
+      "UTR096463876194"
+    ],
+    "mismatch_type": "TIMING_LAG",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_42e3f8413f4a91",
+    "correct_settlement_utrs": [
+      "UTR632844614431"
+    ],
+    "mismatch_type": "TIMING_LAG",
+    "split": "dev"
+  },
+  {
+    "transaction_id": null,
+    "orphan_bank_utr": "UTR208132388660",
+    "correct_settlement_utrs": null,
+    "mismatch_type": "ORPHAN_BANK",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_bdec3c334cca21",
+    "correct_settlement_utrs": [
+      "UTR884072663850"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "dev"
+  },
+  {
+    "transaction_id": "txn_5534ea92b26fa8",
+    "correct_settlement_utrs": [
+      "UTR832950016740"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_1240505636a229",
+    "correct_settlement_utrs": [
+      "UTR981332608308"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_c4fa1f6c5fc388",
+    "correct_settlement_utrs": [
+      "UTR695776049775"
+    ],
+    "mismatch_type": "TIMING_LAG",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_451758d06901c9",
+    "correct_settlement_utrs": [
+      "UTR338487732308"
+    ],
+    "mismatch_type": "DUPLICATE",
+    "note": "duplicate settlement row also exists: UTR705572125259",
+    "split": "eval"
+  },
+  {
+    "transaction_id": null,
+    "orphan_bank_utr": "UTR239133626704",
+    "correct_settlement_utrs": null,
+    "mismatch_type": "ORPHAN_BANK",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_f36d657e6fca2f",
+    "correct_settlement_utrs": [
+      "UTR968456262209"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_b903ad90cd9c28",
+    "correct_settlement_utrs": [
+      "UTR788084056440"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": null,
+    "orphan_bank_utr": "UTR529393077746",
+    "correct_settlement_utrs": null,
+    "mismatch_type": "ORPHAN_BANK",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_87aa9df130e8e3",
+    "correct_settlement_utrs": [
+      "UTR044903498065"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_aa2b18a52bffe1",
+    "correct_settlement_utrs": [
+      "UTR116697037967"
+    ],
+    "mismatch_type": "FEE_DRIFT",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_a0fd61b7e52299",
+    "correct_settlement_utrs": [
+      "UTR296400473109"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_e2c0176963851a",
+    "correct_settlement_utrs": [
+      "UTR374403446249"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_5f35ff4b7936d6",
+    "correct_settlement_utrs": [
+      "UTR709445965738",
+      "UTR560763609637"
+    ],
+    "mismatch_type": "SPLIT",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_98e65c20f1eab3",
+    "correct_settlement_utrs": [
+      "UTR846722076278"
+    ],
+    "mismatch_type": "GARBLED_REF",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_3d74c3035df4a6",
+    "correct_settlement_utrs": [
+      "UTR577630633873"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_8567ca2a6be760",
+    "correct_settlement_utrs": null,
+    "mismatch_type": "ORPHAN_GATEWAY",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_5b83a6b296d43c",
+    "correct_settlement_utrs": [
+      "UTR674857331688"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_640ca4b8601ee8",
+    "correct_settlement_utrs": [
+      "UTR880739888271"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_9698e3b36a45c1",
+    "correct_settlement_utrs": [
+      "UTR911152672624"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  },
+  {
+    "transaction_id": "txn_5bfb3b49c9fd45",
+    "correct_settlement_utrs": [
+      "UTR561890254567"
+    ],
+    "mismatch_type": "CLEAN",
+    "split": "eval"
+  }
+]

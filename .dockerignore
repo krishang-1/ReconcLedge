@@ -1,0 +1,25 @@
+# Keeps the Docker build context (and resulting image) lean - none of
+# these are imported by anything on the actual request-serving path.
+# Mirrors .gitignore's own exclusions where they overlap.
+
+.git
+.gitignore
+.pytest_cache
+__pycache__
+*.pyc
+
+tests/
+scripts/
+docs/
+frontend/
+README.md
+
+# Runtime artifacts - never meaningful to bake into an image
+api/jobs.db
+scripts/fuzz_results.json
+scripts/realworld_simulation_results.json
+scripts/_deep_fuzz_hardening_jobs.db
+scripts/_deep_fuzz_reconciliation_jobs.db
+
+Dockerfile
+.dockerignore

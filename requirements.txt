@@ -1,0 +1,17 @@
+# Core pipeline (data/, agent/, eval/)
+requests>=2.31
+
+# API layer (api/)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+# Imported directly in api/app.py (BaseModel, Field for every request
+# model) - already installed transitively as a real dependency of
+# fastapi itself, but listed explicitly here too since the code
+# imports it directly, not just fastapi doing so internally. Found
+# during a full verification sweep - a real, low-risk observation
+# worth fixing at zero cost, not a bug that was ever actually hit.
+pydantic>=2.0
+
+# Testing (tests/)
+pytest>=8.0
+httpx>=0.27
